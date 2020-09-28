@@ -1,0 +1,41 @@
+.section-contact
+  padding-top: 50px
+  padding-bottom: 96px
+.contact
+  &-title
+    color: #304247
+    font-family: "Proxima Nova Bold"
+    font-size: 47px
+    font-weight: 700
+    display: block
+    text-align: center
+  &-block
+    margin-top: 48px
+    display: flex
+    justify-content: center
+  &-item
+    display: flex
+    align-items: center
+    &:first-child
+      margin-right: 72px
+  &-a
+    color: #304247;
+    font-family: "Proxima Nova Bold"
+    font-size: 32px
+    font-weight: bold
+    margin-left: 18px
+@media (max-width: 830px)
+  .contact
+    &-block
+      flex-direction: column
+      align-items: center
+    &-item
+      &:first-child
+        margin-bottom: 20px
+        margin-right: 0px
+@media (max-width: 500px)
+  .contact
+    &-a
+      font-size: 24px
+    &-title
+      font-size: 36px

@@ -1,0 +1,36 @@
+.section-service
+  padding-top: 5px
+.service
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  &-button
+    margin-top: 55px
+  &-text
+    &__title
+      color: #304247
+      font-family: "Proxima Nova Bold"
+      font-size: 47px
+      font-weight: 700
+    &__text
+      color: #ff9738
+      font-family: "Proxima Nova Bold"
+      font-size: 17px
+      font-weight: 600
+      margin: 0px
+      margin-top: 15px
+@media (max-width: 1130px)
+  .service
+    flex-wrap: wrap-reverse
+    justify-content: center
+    &-text
+      margin-top: 10px
+@media (max-width: 500px)
+  .service
+    &-button
+      margin-top: 40px
+    &-text
+      &__title
+        font-size: 36px
+    

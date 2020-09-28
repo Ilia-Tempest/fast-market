@@ -1,0 +1,29 @@
+.header
+  padding-top: 20px
+  padding-bottom: 25px
+  border-bottom: 11px solid white
+
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    position: relative
+  &-button
+    border: 3px solid #ff9738
+    color: #ff9738
+    font-family: "Proxima Nova Bold"
+    font-size: 17px
+    font-weight: 600
+    padding: 10px 20px
+    border-radius: 25px
+    cursor: pointer
+
+@media (max-width: 1155px)
+  .header
+    &-button
+      margin-top: 20px
+@media (max-width: 1000px)
+  .header
+    &-block
+      flex-direction: column

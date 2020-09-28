@@ -1,0 +1,173 @@
+.section-work
+  margin-top: -75px
+.work
+  &-three
+    display: flex
+    align-items: center
+    position: relative
+    margin-top: -65px
+    &__item
+      margin-top: 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+  &-two
+    display: flex
+    justify-content: flex-end
+    margin-right: 150px
+    margin-top: 20px
+    align-items: center
+    position: relative
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      &:first-child
+        margin-right: 260px
+  &-title
+    color: #304247
+    font-family: "Proxima Nova Bold"
+    font-size: 47px
+    font-weight: 700
+    text-align: center
+    display: block
+  &-orange
+    color: #ff9738
+    font-family: "Proxima Nova Bold"
+    font-size: 41px
+    font-weight: 700
+    text-align: center
+    display: block
+    margin-top: 50px
+  &-us
+    margin-top: 20px
+    display: flex
+    justify-content: space-around
+    position: relative
+    &__line2
+      position: absolute
+      left: 27%
+      top: 90px
+    &__line3
+      position: absolute
+      right: 27%
+      top: 120px
+    &__line4
+      position: absolute
+      right: 5%
+      bottom: -30px
+    &__line5
+      position: absolute
+      right: 21%
+    &__line6
+      position: absolute
+      top: -150px
+      left: 120px
+    &__text
+      margin-top: 25px
+      color: #000000
+      font-family: "Proxima Nova Bold"
+      font-size: 20px
+      font-weight: 700
+    &__item
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      &:last-child
+       margin-top: 48px
+      &2
+       margin-top: 90px   
+  &-you
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-top: 15px
+    position: relative
+    &__line
+      position: absolute
+      top: 30%
+    &__text
+      margin-top: 30px
+      color: #000000
+      font-family: "Proxima Nova Bold"
+      font-size: 20px
+      font-weight: 700
+      text-align: center
+    &__item
+      &:first-child
+        margin-right: 260px
+      &:last-child
+        margin-top: 40px
+@media (max-width: 1200px)
+  .section-work
+    margin-top: 0px
+    padding-top: 40px
+@media (max-width: 1180px)
+  .work
+    &-us
+      &__line6
+        left: 50px
+@media (max-width: 1100px)
+  .work
+    &-two
+      margin-right: 0px
+      flex-wrap: wrap
+      justify-content: space-around
+      &__item
+        margin-right: 0px
+        margin-top: 30px
+        &:first-child
+          margin-right: 0px
+    &-three
+      margin-top: 30px
+      flex-wrap: wrap
+      justify-content: space-around
+    &-us
+      flex-wrap: wrap
+      justify-content: space-between
+      &__line2
+        display: none
+      &__line3
+        display: none
+      &__line4
+        display: none
+      &__line5
+        display: none
+      &__line6
+        display: none
+      &__line7
+        display: none
+      &__item
+        margin-top: 40px
+        &2
+          margin-top: 40px
+@media (max-width: 640px)
+  .work
+    &-three
+      flex-direction: column
+      align-items: center
+    &-us
+      flex-direction: column
+      align-items: center
+    &-two
+      flex-direction: column
+      align-items: center
+    &-orange
+      margin-top: 40px
+    &-you
+      justify-content: space-between
+      flex-direction: column
+      align-items: center
+      margin-top: 40px
+      &__line
+        display: none
+      &__item
+        &:first-child
+          margin-right: 0px
+@media (max-width: 500px)
+  .work
+    &-title
+      font-size: 36px

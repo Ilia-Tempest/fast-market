@@ -1,6 +1,119 @@
+body
+  background: rgba(0, 0, 0, 0.07)
+  position: relative
 img
   text-decoration: none
   max-width: 100%
+a
+  text-decoration: none
 .container
-  max-width: 1120px
+  max-width: 1096px
   margin: auto
+.button
+  text-align: center
+  padding: 10px 40px
+  color: #ffffff
+  font-family: "Proxima Nova Bold"
+  font-size: 21px
+  font-weight: 600
+  background-color: #ff9738
+  border-radius: 25px
+  align-items: center
+  display: inline-block
+  cursor: pointer
+  &-work
+    margin-top: 85px
+    justify-content: center
+    display: flex
+.mobile
+  position: absolute
+  right: 0
+  top: 21px
+  display: none
+.mobile-menu 
+  width: 30px
+  height: 3px
+  background: black
+  position: relative
+  cursor: pointer
+  & span::before
+    content: ''
+    position: absolute
+    width: 30px
+    height: 3px
+    background: black
+    bottom: 5px
+  & span::after
+    content: ''
+    position: absolute
+    width: 30px
+    height: 3px
+    background: black
+    top: 5px
+.logo
+  display: flex
+  align-items: center
+  cursor: pointer
+  &-img
+    margin-right: 15px
+.menu
+  display: flex
+  flex-wrap: wrap
+  &-item
+    margin-right: 25px
+    color: #304247
+    font-family: "Proxima Nova Bold"
+    font-size: 17px
+    font-weight: 600
+@media (max-width: 1200px)
+  .container
+    width: 90%
+@media (max-width: 1000px)
+  .button
+    &-work
+      margin-top: 40px
+  .mobile
+    display: inline-block
+    z-index: 5
+  .menu
+    transform: translateX(-100%)
+    transition: 0.5s all
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: fixed
+    background: white
+    width: 111%
+    top: -20px
+    height: 110vh
+    justify-content: center
+    &-item
+      padding-top: 15px
+      padding-bottom: 15px
+      border-bottom: 1px solid black
+      margin-right: 0px
+  .logo
+    align-self: flex-start
+  .show
+   transform: translateX(0%)
+   z-index: 4
+   &-active 
+     position: fixed
+     right: 5%
+     height: 0px
+   &-active span::before
+     transform: rotate(-45deg)
+     top: 0
+     transition: 0.5s all
+   &-active span::after
+     transform: rotate(45deg)
+     top: 0
+     transition: 0.5s all
+
+   
+@media (max-width: 600px)
+  .logo-text
+    width: 140px
+@media (max-width: 500px)
+  .button
+    padding: 10px 20px

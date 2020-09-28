@@ -1,0 +1,61 @@
+.section-interest
+  padding-top: 65px
+.interest
+  &-text
+    display: inline-block
+    margin-top: 125px
+  &-img
+    margin-right: -70px
+  &-title
+    color: #304247
+    font-family: "Proxima Nova Bold"
+    font-size: 47px
+    font-weight: 700
+    text-align: center
+    display: block
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap-reverse
+    margin-top: 6px
+  &-item
+    display: flex
+    align-items: flex-start
+    margin-top: 18px
+    &:first-child
+      margin-top: 0px
+    &__text
+      color: #304247
+      font-family: "Proxima Nova Rg"
+      font-size: 20px
+      font-weight: 400
+      margin-left: 56px
+@media (max-width: 1260px)
+  .interest
+    &-img
+      margin-right: 0px
+@media (max-width: 1200px)
+  .interest
+    &-block
+      justify-content: center
+    &-text
+      margin-top: -90px
+      z-index: 1
+@media (max-width: 600px)
+  .interest
+    &-title
+      font-size: 40px
+    &-text
+      margin-top: -50px
+    &-item
+      &__text
+        margin-left: 20px
+        font-size: 17px
+@media (max-width: 500px)
+  .interest
+    &-title
+      font-size: 36px
+@media (max-width: 380px)
+  .interest
+    &-title
+      font-size: 26px

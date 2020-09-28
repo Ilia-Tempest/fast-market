@@ -1,0 +1,64 @@
+.section-slider
+  padding-top: 40px
+.slider
+  position: relative
+  &-block
+    max-width: 820px
+    margin: auto
+  &-title
+    color: #304247
+    font-family: "Proxima Nova Bold"
+    text-align: center
+    display: block
+    font-size: 31px
+    font-weight: 700
+    margin-bottom: 60px
+  &-item
+    outline: none
+    margin-right: 58px
+    &.slick-slide
+      width: 125px
+    &:last-child
+      margin-right: 0px
+  &-left
+    cursor: pointer
+    position: absolute
+    left: 0
+    bottom: 20px
+  &-right
+    cursor: pointer
+    position: absolute
+    right: 0
+    bottom: 20px
+@media (max-width: 1200px)
+  .slider
+    &-item
+      margin-right: 50px
+@media (max-width: 1100px)
+  .slider
+    &-block 
+      max-width: 700px
+@media (max-width: 950px)
+  .slider
+    &-block 
+      max-width: 600px
+@media (max-width: 850px)
+  .slider
+    &-block 
+      max-width: 500px
+@media (max-width: 700px)
+  .slider
+    &-block 
+      max-width: 400px
+@media (max-width: 600px)
+  .slider
+    &-block 
+      max-width: 300px
+@media (max-width: 480px)
+  .slider
+    &-block 
+      max-width: 200px
+@media (max-width: 450px)
+  .slider
+    &-block 
+      max-width: 140px
