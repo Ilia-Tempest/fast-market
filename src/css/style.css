@@ -370,8 +370,10 @@ template {
 
 /*Общие стили для сайта*/
 body {
-  background: rgba(0, 0, 0, 0.07);
   position: relative;
+  background-image: url(../img/background.png);
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 img {
@@ -472,7 +474,7 @@ a {
 .menu-item {
   margin-right: 25px;
   color: #304247;
-  font-family: "Proxima Nova Bold";
+  font-family: "Proxima Nova Rg";
   font-size: 17px;
   font-weight: 600;
 }
@@ -845,7 +847,7 @@ a {
 .header {
   padding-top: 20px;
   padding-bottom: 25px;
-  border-bottom: 11px solid white;
+  border-bottom: 11px solid rgba(0, 0, 0, 0.07);
 }
 
 .header-block {
@@ -1581,7 +1583,7 @@ a {
 
 .contact-a {
   color: #304247;
-  font-family: "Proxima Nova Bold";
+  font-family: "Proxima Nova Rg";
   font-size: 32px;
   font-weight: bold;
   margin-left: 18px;
@@ -1633,7 +1635,7 @@ a {
 
 .footer-a {
   color: #ffffff;
-  font-family: "Proxima Nova Bold";
+  font-family: "Proxima Nova Semibold";
   font-size: 17px;
   font-weight: 600;
   margin-right: 30px;
@@ -1656,6 +1658,150 @@ a {
   .footer-a {
     display: inline-block;
     margin-top: 10px;
+  }
+}
+
+/*Стили дляs modal*/
+.close {
+  width: 28px;
+  height: 28px;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.overlay__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay__title {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Proxima Nova Bold";
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.overlay__input {
+  padding-top: 30px;
+  width: 521px;
+  height: 45px;
+  background: none;
+  border: none;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid white;
+  color: #ffffff;
+  font-family: "Proxima Nova Rg";
+  font-size: 35px;
+  font-weight: 700;
+  outline: none;
+}
+
+.overlay__input:first-child {
+  padding-top: 0px;
+}
+
+.overlay__button {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #ff9738;
+  color: #ffffff;
+  font-family: "Proxima Nova Rg";
+  font-size: 26px;
+  font-weight: 700;
+  padding: 13px 48px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.overlay__button-img {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.overlay .flex-popap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlay .flex-popap .popap {
+  position: relative;
+  background-color: #304247;
+  border-radius: 50px;
+  padding: 35px 25px;
+  margin: 0 10px;
+  width: 693px;
+  height: 451px;
+}
+
+.popap span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.mod__conf {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.mod__label {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .mod__conf {
+    font-size: 10px;
+  }
+  .overlay__button {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  .overlay__title {
+    font-size: 26px;
+  }
+  .overlay__input {
+    font-size: 24px;
+    width: 300px;
+  }
+  .overlay .flex-popap .popap {
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
