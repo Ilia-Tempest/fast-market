@@ -17,13 +17,13 @@
       </div>
       <!-- /.logo -->
        <nav id="menu" class="menu">
-         <a href="#result" class="menu-item">Выгоды</a>
+         <a href="#result" class="menu-item menu-item__1">Выгоды</a>
          <!-- /.menu-item -->
-         <a href="#interest" class="menu-item">Для кого</a>
+         <a href="#interest" class="menu-item menu-item__2">Для кого</a>
          <!-- /.menu-item -->
-         <a href="#work" class="menu-item">Принцип работы</a>
+         <a href="#work" class="menu-item menu-item__3">Принцип работы</a>
          <!-- /.menu-item -->
-         <a href="#contact" class="menu-item">Контакты</a>
+         <a href="#contact" class="menu-item menu-item__4">Контакты</a>
          <!-- /.menu-item -->
          <a href="tel: +73433645570" class="menu-item">+7 343 364 55 70</a>
          <!-- /.menu-item -->
@@ -67,7 +67,14 @@
             <!-- /.button service-button -->
           </div>
           <!-- /.service-text -->
+          <div class="service-img__block">
           <img src="img/service/people.png" alt="" class="service-img">
+          <img src="img/service/Фигуры-01.svg" alt="" class="service-round__1 mouse-parallax-bg">
+          <img src="img/service/Фигуры-02.svg" alt="" class="service-round__2 mouse-parallax-bg1">
+          <img src="img/service/Фигуры-03.svg" alt="" class="service-round__3 mouse-parallax-bg2">
+          <img src="img/service/Фигуры-04.svg" alt="" class="service-round__4 mouse-parallax-bg3">
+        </div>
+        <!-- /.service-img__block -->
         </div>
         <!-- /.service -->
       </div>
@@ -80,16 +87,16 @@
           <span class="slider-title">60 млн новых покупателей на маркетплейсах ждут вас</span> 
           <!-- /.slider-title -->
           <div class="slider-block">
-            <img style="width: 126px;" src="img/slider/Bitmap.svg" alt="" class="slider-item">
-            <img src="img/slider/ozon.svg" alt="" class="slider-item">
-            <img src="img/slider/aliexpress.svg" alt="" class="slider-item">
+            <img src="img/slider/Маркетплейсы-07.png" alt="" class="slider-item">
+            <img src="img/slider/Маркетплейсы-01.png" alt="" class="slider-item">
+            <img src="img/slider/Маркетплейсы-05.png" alt="" class="slider-item">
             <img src="img/slider/tmall.svg" alt="" class="slider-item">
             <img src="img/slider/lamoda.svg" alt="" class="slider-item">
             
             <img src="img/slider/Ресурс 3.svg" alt="" class="slider-item">
             <img src="img/slider/Ресурс 4.svg" alt="" class="slider-item">
             <img src="img/slider/Ресурс 7.svg" alt="" class="slider-item">
-            <img src="img/slider/Ресурс 8.svg" alt="" class="slider-item">
+            <img src="img/slider/Ресурс 8.svg" alt="" class="slider-item" id="result">
           </div>
           <!-- /.slider-block -->
           <div class="slider-button">
@@ -101,12 +108,13 @@
         <!-- /.slider -->
       </div>
       <!-- /.container -->
+      
     </section>
     <!-- /.section section-slider -->
     <section class="section section-result">
       <div class="container">
-        <div class="result" id="result">
-          <span class="result-title">Что вы получите ?</span>
+        <div class="result">
+          <span class="result-title">Что вы получите?</span>
           <!-- /.result-title -->
           <div class="result-block">
             <div class="result-item">
@@ -139,7 +147,7 @@
             <!-- /.result-item -->
             <div class="result-item">
               <img src="img/result/four.svg" alt="" class="result-item__img">
-              <p class="result-item__text">
+              <p class="result-item__text" id="interest">
                 Повышение <br>
                 узнаваемости <br>
                 бренда
@@ -158,7 +166,7 @@
 
     <section class="section section-interest">
       <div class="container">
-        <div class="interest" id="interest">
+        <div class="interest">
           <span class="interest-title">
             Вам будет интересен <br>
             наш сервис, если вы:
@@ -169,8 +177,8 @@
               <div class="interest-item">
                 <img src="img/interest/Path.png" alt="" class="interest-item__img">
                 <div class="interest-item__text">
-                  Уверены в росте доли он- <br>
-                  лайн-торговли
+                  Уверены в росте онлайн-торговли<br>
+                  
                 </div>
                 <!-- /.interest-item__text -->
               </div>
@@ -187,7 +195,7 @@
               <!-- /.interest-item -->
               <div class="interest-item">
                 <img src="img/interest/Path.png" alt="" class="interest-item__img">
-                <div class="interest-item__text">
+                <div class="interest-item__text" id="work">
                   Имеете негативный личный опыт <br>
                   в онлайн-продажах
                 </div>
@@ -196,7 +204,12 @@
               <!-- /.interest-item -->
             </div>
             <!-- /.interest-text -->
+            <div class="interest-img__block">
             <img src="img/interest/women.png" alt="" class="interest-img">
+            <img src="img/interest/Фигуры-05.svg" alt="" class="interest-img__1 mouse-parallax-bg4">
+            <img src="img/interest/Фигуры-06.svg" alt="" class="interest-img__2 mouse-parallax-bg5">
+          </div>
+          <!-- /.interest-img__block -->
           </div>
           <!-- /.interest-block -->
         </div>
@@ -208,7 +221,7 @@
 
     <section class="section section-work">
       <div class="container">
-        <div class="work" id="work">
+        <div class="work">
           <span class="work-title">Как это работает?</span>
           <!-- /.work-title --><span class="work-orange">С вас:</span> 
           <!-- /.work-orange -->
@@ -376,8 +389,7 @@
           <!-- /.footer-a -->
           <a href="#work" class="footer-a">Принцип работы</a>
           <!-- /.footer-a -->
-          <a href="#contact" class="footer-a">Контакты</a>
-          <!-- /.footer-a -->
+     
         </div>
         <!-- /.footer-menu -->
         <div onclick="show_popap('modal-1')" class="footer-button">Получить консультацию</div>
@@ -408,6 +420,8 @@
             </button>
           
           </form>
+          <img class="overlay-round" src="img/modal/round.svg" alt="">
+          <!-- /.overlay-round -->
       </div>
     </div>
   </div>
@@ -418,5 +432,8 @@
   <script src="js/main.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/parallax.js">
+
+  </script>
 </body>
 </html>

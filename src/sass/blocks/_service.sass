@@ -5,6 +5,39 @@
   justify-content: space-between
   align-items: center
   flex-wrap: wrap
+  &-img
+    width: 500px
+    height: 400px
+    position: relative
+    z-index: 2
+    &__block
+      position: relative
+  &-round
+    &__1
+      position: absolute
+      width: 51px
+      height: 44px
+      top: 49px
+      left: 67px
+    &__2
+      position: absolute
+      width: 482px
+      height: 354px
+      top: -7px
+      right: -31px
+    &__3
+      width: 333px
+      height: 246px  
+      position: absolute
+      left: -36px
+      bottom: -25px
+    &__4
+      width: 134px
+      height: 112px
+      position: absolute
+      right: 30px 
+      bottom: 9px
+      z-index: 3
   &-button
     margin-top: 55px
   &-text
@@ -25,12 +58,39 @@
     flex-wrap: wrap-reverse
     justify-content: center
     &-text
-      margin-top: 10px
+      margin-top: 40px
+@media (max-width: 640px)
+  .service
+    &-img
+      width: auto
+      height: auto
+      &__block
+        display: none
+    &-round
+      &__2
+        right: 0
 @media (max-width: 500px)
   .service
+    &-round
+     &__1
+       width: 50px
+       top: 10px
+       left: 15px
+       height: auto
+     &__2
+       width: auto
+       height: auto
+       rigth: 0
+     &__3
+       width: auto
+       height: auto
+     &__4
+       width: 90px
+       height: auto
     &-button
       margin-top: 40px
     &-text
+      margin-top: 30px
       &__title
-        font-size: 36px
+        font-size: 30px
     
